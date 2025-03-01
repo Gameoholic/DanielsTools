@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is HTML <%= locals.text || 'Default' %>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel's Ear Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+  
+
+    <button id="pedal" class="toggle-button">Pedal</button>
+    <button id="show-piano" class="toggle-button">Show piano</button>
+    <button id="show-random-playing-technique" class="toggle-button">Show direction</button>
+    <input type="number" id="root-note-range" name="root-note-range" min="1" max="48" value="18"><br><br>
+    <select name="playing-technique" id="playing-technique">
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+      <option value="random">Ascending & Descending</option>
+      <option value="harmonic">Harmonic (simultaneous)</option>
+    </select>
+    <div id="piano-container">
+
+      <div id="piano"></div>
+    </div>
+
+    <p align="center" id="random-playing-technique-direction">Ascending</p>
+    <div id="interval-main-buttons">
+      <div id="interval-guess-buttons">
+        <!-- guess buttons generated here -->
+      </div>
+      <div id="interval-second-row-buttons">
+        <button id="interval-start-button">Start</button>
+        <button id="interval-play-button">Play</button>
+        <button id="interval-next-button">Next</button>
+      </div>
+
+    </div>
+    <div id="interval-settings">
+      <button id="interval-1" class="interval-button">Minor 2nd (1 semitone)</button>
+      <button id="interval-2" class="interval-button">Major 2nd (2 semitones)</button>
+      <button id="interval-3" class="interval-button">Minor 3rd (3 semitones)</button>
+      <button id="interval-4" class="interval-button">Major 3rd (4 semitones)</button>
+      <button id="interval-5" class="interval-button">Perfect 4th (5 semitones)</button>
+      <button id="interval-6" class="interval-button">Tritone (6 semitones)</button>
+      <button id="interval-7" class="interval-button">Perfect 5th (7 semitones)</button>
+      <button id="interval-8" class="interval-button">Minor 6th (8 semitones)</button>
+      <button id="interval-9" class="interval-button">Major 6th (9 semitones)</button>
+      <button id="interval-10" class="interval-button">Minor 7th (10 semitones)</button>
+      <button id="interval-11" class="interval-button">Major 7th (11 semitones)</button>
+      <button id="interval-12" class="interval-button">Octave (12 semitones)</button>
+      <button id="interval-13" class="interval-button">Major 9th (13 semitones)</button>
+      <button id="interval-14" class="interval-button">Minor 9th (14 semitones)</button>
+    </div>
+
+
+    <!-- <audio id="audioC" src="assets/notes/C5.mp3"></audio>
+    <audio id="audioDb" src="assets/notes/Db5.mp3"></audio>
+    <audio id="audioD" src="assets/notes/C5.mp3"></audio> -->
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
