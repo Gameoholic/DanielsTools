@@ -72,7 +72,7 @@ let notes = [];
 noteNames.forEach(noteName => {
   let noteAudio = document.createElement('audio');
   noteAudio.id = 'audio' + noteName;
-  noteAudio.src = 'assets/notes/' + noteName + '.mp3';
+  noteAudio.src = 'eartraining/assets/notes/' + noteName + '.mp3';
   noteAudio.type = 'audio/mpeg';
   document.body.appendChild(noteAudio);
 
