@@ -1,0 +1,19 @@
+{
+    "name": "daniels-tools",
+    "version": "1.0.0",
+    "description": "Description",
+    "main": "index.js",
+    "scripts": {
+        "devStart": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "gameoholic",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
