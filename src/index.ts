@@ -1,6 +1,9 @@
-const express = require("express")
-const app = express()
+import express from 'express';
 
+
+const app = express();
+
+const PORT = 3000;
 
 app.use(express.static("public"))
 
@@ -14,7 +17,9 @@ const userRouter = require("./routes/users")
 
 app.use("/users", userRouter)
 
-app.listen(3000)
+app.listen(PORT);
 
 
-//npm run devStart
+
+//npm run dev
+// to run on server: npm run build to build everything into js, then npm run start
